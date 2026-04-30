@@ -26,10 +26,16 @@ print(context)
 # Returns: "User prefers dark mode and Italian food"
 ```
 
-## Installation
+## Install
 
 ```bash
 pip install memorylayer-py
+```
+
+**Note:** The package name is `memorylayer-py` but you import it as `rec0`:
+
+```python
+from rec0 import Memory  # Import name is 'rec0', not 'memorylayer'
 ```
 
 ## Get Your API Key
@@ -50,8 +56,21 @@ pip install memorylayer-py
 - **Auto-Capture**: Automatically extracts entities, facts, and preferences
 - **Smart Retrieval**: Hybrid BM25 + cosine similarity search
 - **Memory Decay**: Intelligent aging and conflict resolution
-- **Privacy-First**: GDPR-compliant, per-user encryption
+- **Privacy-first**: Per-user encryption, data isolation, and GDPR-compliant deletion. Your users' data is encrypted and never shared with third parties.
 - **LLM-Agnostic**: Works with any LLM (OpenAI, Anthropic, Google, local models)
+
+## rec0 vs Mem0
+
+| rec0 | Mem0 |
+|------|------|
+| Privacy: Per-user encryption & isolation | Standard cloud storage |
+
+## Enterprise Deployment
+
+The Python SDK is fully open source (MIT license). The backend API is
+closed source but available for enterprise on-premise deployment.
+
+For self-hosted deployments, contact: enterprise@rec0.vercel.app
 
 ## Examples
 
@@ -146,16 +165,14 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Links
 
-- [Website](https://rec0.vercel.app)
-- [Documentation](https://rec0.vercel.app/docs)
-- [API Status](https://status.rec0.vercel.app)
-- [Discord Community](https://discord.gg/rec0)
+- [rec0.vercel.app](https://rec0.vercel.app)
+- [GitHub](https://github.com/patelyash2511/rec0-python)
+- [Docs](https://rec0.vercel.app/docs)
 
 ## Support
 
 - GitHub Issues: [Report bugs](https://github.com/patelyash2511/rec0-python/issues)
-- Email: support@rec0.ai
-- Discord: [Join community](https://discord.gg/rec0)
+- Email: support@rec0.vercel.app
 
 ---
 
